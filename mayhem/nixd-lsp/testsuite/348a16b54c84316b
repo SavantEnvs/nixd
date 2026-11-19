@@ -1,0 +1,9 @@
+Content-Length: 223
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{"workspace":{"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"]}}},"trace":"off"}}Content-Length: 193
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///test.nix","languageId":"nix","version":1,"text":"{ pkgs }: { buildInputs = [ pkgs.foo pkgs.bar ]; }"}}}Content-Length: 233
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///test.nix"},"range":{"start":{"line":0,"character":26},"end":{"line":0,"character":47}},"context":{"diagnostics":[],"triggerKind":2}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

@@ -1,0 +1,5 @@
+{
+  foo.bar = 1;
+  foo.baz = 2;
+  foo.qux = 3;
+}

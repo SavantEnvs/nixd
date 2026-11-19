@@ -1,0 +1,1 @@
+with lib; { x = optionalString true "yes"; y = concatStrings [ "a" "b" ]; }

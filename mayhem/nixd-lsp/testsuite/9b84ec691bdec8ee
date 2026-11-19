@@ -1,0 +1,9 @@
+Content-Length: 105
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{}}}Content-Length: 191
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///quoted-inherit.nix","languageId":"nix","version":1,"text":"let path = 1; in { inherit \"path\"; }"}}}Content-Length: 159
+
+{"jsonrpc":"2.0","id":3,"method":"textDocument/references","params":{"textDocument":{"uri":"file:///quoted-inherit.nix"},"position":{"line":0,"character":28}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

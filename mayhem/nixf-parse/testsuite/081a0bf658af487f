@@ -1,0 +1,1 @@
+rec { bar = 1; a = 1; a = bar; b = a; }

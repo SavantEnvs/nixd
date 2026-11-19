@@ -1,0 +1,9 @@
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{},"trace":"off"}}Content-Length: 200
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///pack-attrs-dynamic-first.nix","languageId":"nix","version":1,"text":"let x = \"foo\"; in { ${x}.bar = 1; }"}}}Content-Length: 253
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///pack-attrs-dynamic-first.nix"},"range":{"start":{"line":0,"character":20},"end":{"line":0,"character":28}},"context":{"diagnostics":[],"triggerKind":2}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

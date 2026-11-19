@@ -1,0 +1,10 @@
+{
+  a = {
+    text = ''
+      # literal text, not a comment
+        indented
+      ${"value"}
+    '';
+    "文" = "/* also literal */";
+  };
+}

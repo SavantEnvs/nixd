@@ -1,0 +1,1 @@
+arg @ { foo, bar }: arg + foo + bar + arg

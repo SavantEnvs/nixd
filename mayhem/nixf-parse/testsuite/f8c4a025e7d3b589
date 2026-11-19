@@ -1,0 +1,13 @@
+{
+  # Multi-line attribute set
+  attrs = {
+    x = 1;
+    y = 2;
+  };
+
+  # Multi-line list
+  list = [
+    1
+    2
+  ];
+}

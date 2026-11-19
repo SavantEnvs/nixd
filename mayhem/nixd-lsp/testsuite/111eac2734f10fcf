@@ -1,0 +1,9 @@
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{},"trace":"off"}}Content-Length: 231
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///json-to-nix-numeric.nix","languageId":"nix","version":1,"text":"{\"neg\": -42, \"float\": 3.14159, \"sci\": 1.5e10, \"negFloat\": -0.001}"}}}Content-Length: 247
+
+{"jsonrpc":"2.0","id":1,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///json-to-nix-numeric.nix"},"range":{"start":{"line":0,"character":0},"end":{"line":0,"character":67}},"context":{"diagnostics":[],"triggerKind":2}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

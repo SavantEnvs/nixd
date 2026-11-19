@@ -1,0 +1,12 @@
+{
+    x = 1;
+    anonymousLambda = { a }: a;
+    namedLambda = a: a;
+    numbers = 1 + 2.0;
+    bool = true;
+    bool2= false;
+    string = "1";
+    string2 = "${builtins.foo}";
+    undefined = x;
+    list = [ 1 2 3 ];
+}

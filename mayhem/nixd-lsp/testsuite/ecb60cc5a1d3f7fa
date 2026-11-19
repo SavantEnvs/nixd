@@ -1,0 +1,9 @@
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{},"trace":"off"}}Content-Length: 163
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///basic.nix","languageId":"nix","version":1,"text":"{a ? 1}: { x = a; }"}}}Content-Length: 160
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/rename","params":{"textDocument":{"uri":"file:///basic.nix"},"position":{"line":0,"character":15},"newName":"b"}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

@@ -1,0 +1,7 @@
+{
+  a = {
+    b =
+      # IMPORTANT COMMENT
+      2;
+  };
+}

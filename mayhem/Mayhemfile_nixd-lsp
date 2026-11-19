@@ -1,0 +1,11 @@
+project: savantenvs/nixd
+target: nixd-lsp
+
+cmds:
+  - cmd: /mayhem/nixd_lsp_fuzzer
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nixd-lsp/testsuite

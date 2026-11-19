@@ -1,0 +1,9 @@
+{
+  a /* PATH */ . # DOT
+  "b.c" /* BEFORE EQ */ = # BEFORE OPEN
+  { # FIRST
+    x /* INNER PATH */ = /* VALUE */ 1 /* BEFORE SEMI */; # LAST
+    y = 2;
+    # BEFORE CLOSE
+  } /* AFTER CLOSE */ ; # AFTER OUTER SEMI
+}

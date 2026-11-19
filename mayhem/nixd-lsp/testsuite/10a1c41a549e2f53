@@ -1,0 +1,9 @@
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{},"trace":"off"}}Content-Length: 182
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///not-string.nix","languageId":"nix","version":1,"text":"{ x = 42; y = ./path; z = true; }"}}}Content-Length: 237
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///not-string.nix"},"range":{"start":{"line":0,"character":6},"end":{"line":0,"character":8}},"context":{"diagnostics":[],"triggerKind":2}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

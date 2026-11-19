@@ -1,0 +1,5 @@
+{
+  a.b = /* VALUE */ 1 /* SEMI */;
+  # SIBLING
+  a.c = 2;
+}

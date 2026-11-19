@@ -1,0 +1,1 @@
+with outer; { y = with inner; bar; }

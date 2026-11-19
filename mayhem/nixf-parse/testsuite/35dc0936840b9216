@@ -1,0 +1,15 @@
+{
+  a = {
+    b.c =
+      # IMPORTANT COMMENT
+      2;
+    # AND COMMENT HERE
+    d =
+      # ANOTHER COMMENT
+      {
+        # NESTED COMMENT TOO
+        e = 1;
+      } # WHAT ABOUT HERE
+    ; # AND HERE
+  };
+}

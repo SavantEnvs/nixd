@@ -1,0 +1,8 @@
+{
+  "a.b" /* BEFORE DOT */ . # AFTER DOT
+    "c.d" /* BEFORE EQ */ = # BEFORE VALUE
+    ''
+      keep this indentation
+      # string content
+    '' /* BEFORE SEMI */; # AFTER SEMI
+}

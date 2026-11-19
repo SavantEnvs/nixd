@@ -1,0 +1,7 @@
+Content-Length: 119
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{},"trace":"off"}}Content-Length: 179
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///basic.nix","languageId":"nix","version":1,"text":"{ a = 1; \u6d4b\u8bd5\u6587\u672c }"}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

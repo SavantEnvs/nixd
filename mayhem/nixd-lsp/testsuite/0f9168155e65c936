@@ -1,0 +1,17 @@
+Content-Length: 105
+
+{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":123,"rootPath":"","capabilities":{}}}Content-Length: 206
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///pack-attrs-comments-2.nix","languageId":"nix","version":1,"text":"{\n  a.b =\n    # IMPORTANT COMMENT\n    1;\n}"}}}Content-Length: 232
+
+{"jsonrpc":"2.0","id":2,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///pack-attrs-comments-2.nix"},"range":{"start":{"line":1,"character":2},"end":{"line":1,"character":2}},"context":{"diagnostics":[]}}}Content-Length: 353
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///pack-attrs-comments-3.nix","languageId":"nix","version":1,"text":"{\n  \"a.b\" /* BEFORE DOT */ . # AFTER DOT\n    \"c.d\" /* BEFORE EQ */ = # BEFORE VALUE\n    ''\n      keep this indentation\n      # string content\n    '' /* BEFORE SEMI */; # AFTER SEMI\n}"}}}Content-Length: 232
+
+{"jsonrpc":"2.0","id":3,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///pack-attrs-comments-3.nix"},"range":{"start":{"line":1,"character":2},"end":{"line":1,"character":2}},"context":{"diagnostics":[]}}}Content-Length: 224
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///pack-attrs-comments-4.nix","languageId":"nix","version":1,"text":"{\n  a.b = /* VALUE */ 1 /* SEMI */;\n  # SIBLING\n  a.c = 2;\n}"}}}Content-Length: 232
+
+{"jsonrpc":"2.0","id":4,"method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///pack-attrs-comments-4.nix"},"range":{"start":{"line":1,"character":2},"end":{"line":1,"character":2}},"context":{"diagnostics":[]}}}Content-Length: 33
+
+{"jsonrpc":"2.0","method":"exit"}

@@ -1,0 +1,1 @@
+rec { foo.bar = 1; }

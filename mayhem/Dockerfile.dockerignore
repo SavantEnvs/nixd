@@ -1,0 +1,11 @@
+# Build context for mayhem/Dockerfile: the full repo incl. .git (the grader uses the history),
+# minus local build output of mayhem/build.sh and editor/OS noise.
+mayhem/build/
+/nixf_parse_fuzzer*
+/nixd_lsp_fuzzer*
+/nixd-attrset-eval-mock
+*.o
+**/__pycache__/
+.DS_Store
+*.swp
+*~

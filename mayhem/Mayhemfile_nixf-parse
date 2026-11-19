@@ -1,0 +1,11 @@
+project: savantenvs/nixd
+target: nixf-parse
+
+cmds:
+  - cmd: /mayhem/nixf_parse_fuzzer
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nixf-parse/testsuite
